@@ -1,7 +1,7 @@
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 
-function Expenses(props) {
+const Expenses = (props)=> {
   const expenseItems = [];
   for (let i = 0; i < props.items.length; i++) {
     const expenseItem = (
