@@ -1,7 +1,7 @@
+import Card from "./Card";
 import ExpenseItem from "./ExpenseItem";
 
 function Expenses(props) {
-  console.log(props);
   const expenseItems = [];
   for (let i = 0; i < props.items.length; i++) {
     const expenseItem = (
@@ -17,9 +17,9 @@ function Expenses(props) {
   }
 
   return (
-    <div className='expenses'>
+    <Card className='expenses'>
       {expenseItems}
-    </div>
+    </Card>
   );
 }
 
